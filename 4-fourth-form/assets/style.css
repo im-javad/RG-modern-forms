@@ -1,0 +1,84 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.c-white {
+  color: white;
+}
+.half {
+  width: 50%;
+}
+.full {
+  width: 100%;
+}
+/* ---------------------------------- */
+.container {
+  max-width: 600px;
+  margin: 10% auto;
+  padding: 20px;
+  background-color: #0b7070;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #857f7f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  animation: moveup 1.2s ease;
+}
+@keyframes moveup {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+.container .inputs {
+  position: relative;
+  padding: 25px 0px 10px 10px;
+}
+.container form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .inputs input {
+  width: 100%;
+  border-color: #aaa;
+  border-width: 0 0 2px 0;
+  outline: none;
+  color: #ffff;
+  font-size: 16px;
+  background-color: #0b7070;
+  transition: all 0.3s;
+}
+.container .inputs input:focus {
+  border-bottom: 2px solid #ffff;
+}
+.container .inputs input:focus ~ label {
+  bottom: 35px;
+}
+.container .inputs input:valid {
+  border-color: rgb(4, 66, 4);
+}
+.container .inputs label {
+  color: #ada3a3;
+  position: absolute;
+  left: 10px;
+  bottom: 17px;
+  transition: 0.35s ease;
+}
+.container .inputs button {
+  float: right;
+  padding: 10px 40px;
+  border: none;
+  color: #fff;
+  background-color: #2c2e2e;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.container .inputs button:hover {
+  background-color: #4c4747;
+}
